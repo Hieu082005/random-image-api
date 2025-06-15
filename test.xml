@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<b:template xmlns:b='http://www.google.com/2005/gml/b'>
+
+  <b:includable id='main'>
+    <b:include name='defaultmarkup'/>
+  </b:includable>
+
+  <b:head>
+    <b:include data='blog' name='all-head-content'/>
+    <b:skin><![CDATA[
+      body {
+        font-family: Arial, sans-serif;
+        background: #f5f5f5;
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: #2c3e50;
+        padding: 20px;
+        text-align: center;
+        color: white;
+      }
+      nav {
+        background: #34495e;
+        display: flex;
+        justify-content: center;
+      }
+      nav a {
+        color: white;
+        padding: 15px 20px;
+        text-decoration: none;
+        display: inline-block;
+      }
+      nav a:hover {
+        background: #2c3e50;
+      }
+      .content {
+        max-width: 900px;
+        margin: 20px auto;
+        background: white;
+        padding: 20px;
+        box-shadow: 0 0 10px #ccc;
+      }
+      footer {
+        background: #2c3e50;
+        color: white;
+        text-align: center;
+        padding: 10px;
+        margin-top: 40px;
+      }
+    ]]></b:skin>
+  </b:head>
+
+  <b:body>
+    <header>
+      <h1>Tester2025</h1>
+    </header>
+
+    <nav>
+      <a expr:href='data:blog.homepageUrl'>Trang chủ</a>
+      <a href='/p/gioi-thieu.html'>Giới thiệu</a>
+      <a href='/p/lien-he.html'>Liên hệ</a>
+    </nav>
+
+    <div class='content'>
+      <b:section id='main' class='main' maxwidgets='1' showaddelement='yes'>
+        <b:widget id='Blog1' locked='false' title='Main Blog' type='Blog'/>
+      </b:section>
+    </div>
+
+    <footer>
+      © 2025 Tester2025. All rights reserved.
+    </footer>
+  </b:body>
+
+</b:template>
